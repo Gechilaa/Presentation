@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./presentation.css";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Brain,
-  Zap,
-  Globe,
-  MessageSquare,
-} from "lucide-react";
+// Use lightweight local placeholders for icons to avoid runtime import errors
+const Placeholder = ({ children, className }) => (
+  <div className={className} style={{ fontSize: '1.6rem', display: 'inline-block' }}>{children}</div>
+);
+const Brain = (props) => <Placeholder {...props}>🧠</Placeholder>;
+const Zap = (props) => <Placeholder {...props}>⚡</Placeholder>;
+const Globe = (props) => <Placeholder {...props}>🌐</Placeholder>;
+const MessageSquare = (props) => <Placeholder {...props}>💬</Placeholder>;
 
 const Presentation = () => {
   const [current, setCurrent] = useState(0);

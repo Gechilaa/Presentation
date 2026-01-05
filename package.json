@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://Gechilaa.github.io/Presentation",
+  
   "dependencies": {
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
