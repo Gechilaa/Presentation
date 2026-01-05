@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "echo 'Using GitHub Actions for deploy'",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://Gechilaa.github.io/Presentation",
   "dependencies": {
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
